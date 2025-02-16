@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.chess.labaratorywork3.Engine.ChessController"
+        stylesheets="chessStyles.css">
+
+    <HBox>
+        <Button text="New" fx:id="newGameButton" onAction="#newGame"></Button>
+        <Button text="Save" fx:id="saveGameButton" onAction="#saveGame"></Button>
+        <Button text="Load" fx:id="loadGameButton" onAction="#loadGame"></Button>
+    </HBox>
+
+    <Label fx:id="gameTimer" text="Timer: "></Label>
+    <Label fx:id="figureMove" text="Move: "></Label>
+
+    <GridPane fx:id="chessField">
+        <!--шахматные индексы столбцов-->
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="1">A</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="2">B</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="3">C</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="4">D</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="5">E</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="6">F</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="7">G</Label>
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="8">H</Label>
+        <!--шахматные индексы строк-->
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0">8</Label>
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0">7</Label>
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="0">6</Label>
+        <Label GridPane.rowIndex="4" GridPane.columnIndex="0">5</Label>
+        <Label GridPane.rowIndex="5" GridPane.columnIndex="0">4</Label>
+        <Label GridPane.rowIndex="6" GridPane.columnIndex="0">3</Label>
+        <Label GridPane.rowIndex="7" GridPane.columnIndex="0">2</Label>
+        <Label GridPane.rowIndex="8" GridPane.columnIndex="0">1</Label>
+    </GridPane>
+
+</VBox>
