@@ -36,8 +36,8 @@ public class Main extends Application {
         chessController.initializeChessField(STAGE_WIDTH, STAGE_HEIGHT);
 
         //Загрузка фигур из файла
-        FigureList figureList = new FigureList();
         final int CELLS_COUNT = 8;
+        FigureList figureList = new FigureList(CELLS_COUNT);
         String fileName = "DefaultFigures.csv";
         InputStream inputStream = getClass().getResourceAsStream(fileName);
         if (inputStream == null) {

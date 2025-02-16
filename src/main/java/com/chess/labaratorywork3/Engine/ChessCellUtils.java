@@ -4,10 +4,10 @@ public class ChessCellUtils {
     public void setColor(ChessCell chessCell, int chessLocationX, int chessLocationY){
         if (chessLocationX%2 == 0){
             if (chessLocationY%2 == 0) chessCell.setStyle("-fx-background-color: beige;");
-            else chessCell.setStyle("-fx-background-color: black;");
+            else chessCell.setStyle("-fx-background-color: #ac9362;");
         }
         else{
-                if (chessLocationY%2 == 0) chessCell.setStyle("-fx-background-color: black;");
+                if (chessLocationY%2 == 0) chessCell.setStyle("-fx-background-color: #ac9362;");
                 else chessCell.setStyle("-fx-background-color: beige;");
             }
     }
